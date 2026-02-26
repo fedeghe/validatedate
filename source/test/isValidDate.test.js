@@ -1,9 +1,8 @@
-const assert = require('assert'),
-    validatedate = require('../dist/index.js');
+const validatedate = require('../dist/index.js');
 
 
-describe('validatedate.isValidDate', () => {
-    it('basic positive cases', () => {
+
+    test('basic positive cases', () => {
         const good = [
             ['2012-12-12'],
             ['2012-02-29'],// leap
@@ -51,11 +50,10 @@ describe('validatedate.isValidDate', () => {
         ]
         good.forEach(w => {
             const res = validatedate.isValidDate(...w);
-            assert.strictEqual(res, true);
+            expect(res).toBe(true);
         })
         bad.forEach(w => {
             const res = validatedate.isValidDate(...w);
-            assert.strictEqual(res, false);
+            expect(res).toBe(false);
         })
     });
-});
