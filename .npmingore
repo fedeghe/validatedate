@@ -1,6 +1,6 @@
 source
 coverage
-.nyc_output
 node_modules
 test
 .buildNum.json
+.github
