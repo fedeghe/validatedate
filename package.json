@@ -5,9 +5,7 @@
   "repository": "https://github.com/fedeghe/dateFormat.git",
   "author": "fedeghe <fedeghe@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "coveralls": "^3.1.1",
     "malta": "^4.1.41",
     "malta-header-comment": "^1.0.12",
     "malta-js-uglify": "^1.0.13",
